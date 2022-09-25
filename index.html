@@ -24,41 +24,16 @@
   <body>
     <header class="header">   
       <nav class="navbar navbar-expand-lg py-3 bg-dash-dark-2 border-bottom border-dash-dark-1 z-index-10">
-        <div class="search-panel">
-          <div class="search-inner d-flex align-items-center justify-content-center">
-            <div class="close-btn d-flex align-items-center position-absolute top-0 end-0 me-4 mt-2 cursor-pointer"><span>Close </span>
-                  <svg class="svg-icon svg-icon-md svg-icon-heavy text-gray-700 mt-1">
-                    <use xlink:href="#close-1"> </use>
-                  </svg>
-            </div>
-            <div class="row w-100">
-              <div class="col-lg-8 mx-auto">
-                <form class="px-4" id="searchForm" action="#">
-                  <div class="input-group position-relative flex-column flex-lg-row flex-nowrap">
-                    <input class="form-control shadow-0 bg-none px-0 w-100" type="search" name="search" placeholder="What are you searching for...">
-                    <button class="btn btn-link text-gray-600 px-0 text-decoration-none fw-bold cursor-pointer text-center" type="submit">Search</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="container-fluid d-flex align-items-center justify-content-between py-1">
           <div class="navbar-header d-flex align-items-center"><a class="navbar-brand text-uppercase text-reset" href="index.html">
               <div class="brand-text brand-big"><strong class="text-primary">OWASP</strong></div>
-              <div class="brand-text brand-sm"><strong class="text-primary">D</strong><strong>A</strong></div></a>
+              <div class="brand-text brand-sm"><strong class="text-primary">O</strong><strong>W</strong></div></a>
             <button class="sidebar-toggle">
                   <svg class="svg-icon svg-icon-sm svg-icon-heavy transform-none">
                     <use xlink:href="#arrow-left-1"> </use>
                   </svg>
             </button>
           </div>
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item"><a class="search-open nav-link px-0" href="#">
-                    <svg class="svg-icon svg-icon-xs svg-icon-heavy text-gray-700">
-                      <use xlink:href="#find-1"> </use>
-                    </svg></a></li>
-          </ul>
         </div>
       </nav>
     </header>
@@ -101,20 +76,264 @@
                     </ul>
         </ul>
       </nav>
-      <div class="page-content">
+      <div class="page-content" id="content">
+        
             <!-- Page Header-->
             <div class="bg-dash-dark-2 py-4">
               <div class="container-fluid">
-                <h2 class="h5 mb-0">Dashboard</h2>
+                <h2 class="h5 mb-0">Hello Stiven!</h2>
               </div>
             </div>
+            <!-- Breadcrumb-->
+            <div class="container-fluid py-2">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 py-3 px-0">
+                  <li class="breadcrumb-item">Home</li>
+                </ol>
+              </nav>
+            </div>
  
+            <section> 
+              <div class="container-fluid">
+                <h2 class="h6 mb-0">Visit us and help us grow</h2>
+              </div>
+              <div class="container-fluid content-card row">
+                <div class="col-4"> 
+                  <div class="card flex-row  pointer">
+                    <img class="card-img-left example-card-img-responsive picture-112" src="img/photo_free/54502.jpg"/>
+                    <div class="card-body">
+                      <h4 class="card-title h5 h4-sm">Donate</h4>
+                      <p class="card-text">Want to help?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card flex-row pointer">
+                    <img class="card-img-left example-card-img-responsive picture-112" src="img/photo_free/368537.jpg"/>
+                    <div class="card-body">
+                      <h4 class="card-title h5 h4-sm">YouTube</h4>
+                      <p class="card-text">Video tutorial</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card flex-row pointer">
+                    <img class="card-img-left example-card-img-responsive picture-112" src="img/photo_free/368458.png"/>
+                    <div class="card-body">
+                      <h4 class="card-title h5 h4-sm">Twitter</h4>
+                      <p class="card-text">Announcements</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <div class="container-fluid">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="tab-option nav-link active pl-0" aria-current="page" onclick="activeNav(event,'nav1')">Most Popular</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="tab-option nav-link" onclick="activeNav(event,'nav2')">The Most New</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="tab-option nav-link" onclick="activeNav(event,'nav3')">Near Me</a>
+                  </li>
+                </ul>
+                <div id="nav1" class="tab-content">
+                    <div class="container-card">
+                      <div class="col">
+                        <div class="card card-tutorial">
+                          <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">What Should I Do?</p>
+                          </div>
+                          <div class="card-footer pointer">
+                            <p class="card-text">See more information</p>
+                          </div>
+                        </div>
+                      </div>
+                       <div class="col">
+                        <div class="card card-tutorial">
+                          <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">What Should I Do?</p>
+                          </div>
+                          <div class="card-footer pointer">
+                            <p class="card-text">See more information</p>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="col">
+                        <div class="card card-tutorial">
+                          <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">What Should I Do?</p>
+                          </div>
+                          <div class="card-footer pointer">
+                            <p class="card-text">See more information</p>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                    <div class="container-card pt-4">
+                      <div class="col">
+                        <div class="card card-tutorial">
+                          <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">What Should I Do?</p>
+                          </div>
+                          <div class="card-footer pointer">
+                            <p class="card-text">See more information</p>
+                          </div>
+                        </div>
+                      </div>
+                       <div class="col">
+                        <div class="card card-tutorial">
+                          <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">What Should I Do?</p>
+                          </div>
+                          <div class="card-footer pointer">
+                            <p class="card-text">See more information</p>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="col">
+                        <div class="card card-tutorial">
+                          <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">What Should I Do?</p>
+                          </div>
+                          <div class="card-footer pointer">
+                            <p class="card-text">See more information</p>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                    <div class="container-card pt-4">
+                      <div class="col">
+                        <div class="card card-tutorial">
+                          <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">What Should I Do?</p>
+                          </div>
+                          <div class="card-footer pointer">
+                            <p class="card-text">See more information</p>
+                          </div>
+                        </div>
+                      </div>
+                       <div class="col">
+                        <div class="card card-tutorial">
+                          <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">What Should I Do?</p>
+                          </div>
+                          <div class="card-footer pointer">
+                            <p class="card-text">See more information</p>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="col">
+                        <div class="card card-tutorial">
+                          <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">What Should I Do?</p>
+                          </div>
+                          <div class="card-footer pointer">
+                            <p class="card-text">See more information</p>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                    <div class="container-card pt-4">
+                      <div class="col">
+                        <div class="card card-tutorial">
+                          <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">What Should I Do?</p>
+                          </div>
+                          <div class="card-footer pointer">
+                            <p class="card-text">See more information</p>
+                          </div>
+                        </div>
+                      </div>
+                       <div class="col">
+                        <div class="card card-tutorial">
+                          <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">What Should I Do?</p>
+                          </div>
+                          <div class="card-footer pointer">
+                            <p class="card-text">See more information</p>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="col">
+                        <div class="card card-tutorial">
+                          <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">What Should I Do?</p>
+                          </div>
+                          <div class="card-footer pointer">
+                            <p class="card-text">See more information</p>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                </div>
+                <div id="nav2" class="tab-content">
+                  <div class="container-card">
+                    <div class="col">
+                      <div class="card card-tutorial">
+                        <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">What Should I Do?</p>
+                        </div>
+                        <div class="card-footer pointer">
+                          <p class="card-text">See more information</p>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="col">
+                      <div class="card card-tutorial">
+                        <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">What Should I Do?</p>
+                        </div>
+                        <div class="card-footer pointer">
+                          <p class="card-text">See more information</p>
+                        </div>
+                      </div>  
+                    </div>
+                    <div class="col">
+                      <div class="card card-tutorial">
+                        <img src="img/photo_free/25482.jpg" class="card-img-top pointer" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">What Should I Do?</p>
+                        </div>
+                        <div class="card-footer pointer">
+                          <p class="card-text">See more information</p>
+                        </div>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+                <div id="nav3" class="tab-content">
+                  <div class="container-fluid pl-0">
+                    <h2 class="h5 pt-4">You do not have content added to your account</h2>
+                  </div>
+                </div>
+              </div>
+            
+            </section>
+            
   
         <!-- Page Footer-->
         <footer class="position-absolute bottom-0 bg-dash-dark-2 text-white text-center py-3 w-100 text-xs" id="footer">
           <div class="container-fluid text-center">
-            <!-- Please do not remove the backlink to us unless you support us at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-            <p class="mb-0 text-dash-gray">2021 &copy; Your company. Design by <a href="https://bootstrapious.com">Bootstrapious</a>.</p>
+            <p class="mb-0 text-dash-gray">Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0. Safari/537.36 PHP Version: 8.1.6</p>
           </div>
         </footer>
       </div>
@@ -125,6 +344,7 @@
     <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="js/charts-home.js"></script>
+    <script src="js/index.js"></script>
     <!-- Main File-->
     <script src="js/front.js"></script>
     <script>

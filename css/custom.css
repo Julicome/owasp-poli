@@ -1,1 +1,65 @@
-/* your styles go here */
+.picture-112{
+    width: 7rem;
+    height: 7rem;
+}
+
+.content-card{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.pl-0{
+    padding-left: 0px;
+}
+
+a.nav-link{
+    color: #8a8d93;
+    font-size: 0.95rem;
+}
+
+a.nav-link:hover{
+    color: #d1c3c3;
+}
+
+a.nav-link:focus{
+    color: #8a8d93;
+}
+
+a.nav-link.active{
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.tab-content{
+    display: none;
+}
+
+.container-card{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    /* margin: auto; */
+}
+
+.flex-container {
+    flex-wrap: wrap;
+}
+
+.card-tutorial{
+    width: 18rem;
+}
+
+.card-footer{
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+    .container-card1{
+        flex-wrap: wrap;
+    }
+}
