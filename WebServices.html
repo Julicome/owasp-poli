@@ -3,7 +3,7 @@
   <head> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dark Admin by Bootstrapious.com</title>
+    <title>OWASP Multillidae II: Keep Calm and Pwn On</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -46,20 +46,12 @@
         <div class="container-fluid d-flex align-items-center justify-content-between py-1">
           <div class="navbar-header d-flex align-items-center"><a class="navbar-brand text-uppercase text-reset" href="index.html">
               <div class="brand-text brand-big"><strong class="text-primary">OWASP</strong></div>
-              <div class="brand-text brand-sm"><strong class="text-primary">D</strong><strong>A</strong></div></a>
+              <div class="brand-text brand-sm"><strong class="text-primary">O</strong><strong>W</strong></div></a>
             <button class="sidebar-toggle">
                   <svg class="svg-icon svg-icon-sm svg-icon-heavy transform-none">
                     <use xlink:href="#arrow-left-1"> </use>
                   </svg>
             </button>
-          </div>
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item"><a class="search-open nav-link px-0" href="#">
-                    <svg class="svg-icon svg-icon-xs svg-icon-heavy text-gray-700">
-                      <use xlink:href="#find-1"> </use>
-                    </svg></a></li>
-          </ul>
-        </div>
       </nav>
     </header>
     <div class="d-flex align-items-stretch">
@@ -74,47 +66,85 @@
           </div>
         </div>
         <ul class="list-unstyled">
-              <li class="sidebar-item active"><a class="sidebar-link" href="index.html"> 
+              <li class="sidebar-item"><a class="sidebar-link" href="index.html"> 
                       <svg class="svg-icon svg-icon-sm svg-icon-heavy">
                         <use xlink:href="#real-estate-1"> </use>
                       </svg><span>Home </span></a></li>
-              <li class="sidebar-item"><a class="sidebar-link" href="owasp.html"> 
+              <li class="sidebar-item "><a class="sidebar-link" href="owasp.html"> 
                       <svg class="svg-icon svg-icon-sm svg-icon-heavy">
                         <use xlink:href="#portfolio-grid-1"> </use>
-                      </svg><span>OWASP </span></a></li>
-      
-            
+                      </svg><span>OWASP</span></a></li>
               <li class="sidebar-item"><a class="sidebar-link" href="Log.html"> 
                         <svg class="svg-icon svg-icon-sm svg-icon-heavy">
                           <use xlink:href="#survey-1"> </use>
                         </svg><span>Logs</span></a></li>
-              <li class="sidebar-item"><a class="sidebar-link" href="WebServices.html"> 
+              <li class="sidebar-item active"><a class="sidebar-link" href="WebServices.html"> 
                           <svg class="svg-icon svg-icon-sm svg-icon-heavy">
                             <use xlink:href="#disable-1"> </use>
                           </svg><span>Web Services</span></a></li>
-                        
-
               <li class="sidebar-item"><a class="sidebar-link" href="EditPrfile.html"> 
                       <svg class="svg-icon svg-icon-sm svg-icon-heavy">
                         <use xlink:href="#disable-1"> </use>
                       </svg><span>Edit Porfile </span></a></li>
                     </ul>
-        </ul>
       </nav>
-      <div class="page-content">
+      <div class="page-content form-page">
             <!-- Page Header-->
             <div class="bg-dash-dark-2 py-4">
               <div class="container-fluid">
-                <h2 class="h5 mb-0">Dashboard</h2>
+                <h2 class="h5 mb-0">Log</h2>
               </div>
             </div>
- 
-  
-        <!-- Page Footer-->
+            <!-- Breadcrumb-->
+            <div class="container-fluid py-2">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 py-3 px-0">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">SOAP</li>
+                  <li class="breadcrumb-item active" aria-current="page">REST</li>
+                </ol>
+              </nav>
+            </div>
+        <section class="tables py-0">
+          <div class="container-fluid">
+            <div class="row gy-4">
+              <div class="col-lg-12">
+                <div class="card mb-0">
+                  <div class="card-header">
+                  </div>
+                  <div class="card-body pt-0">
+                    <div class="brand-text brand-sm"><strong class="text-primary">I</strong><strong>Hello World</strong></div></a>
+                    <br>
+                    <h5 class="h5 mb-0">View the WDLS for the services. Click on an aperation name to view it's details. hello</h5>
+                    <div class="table-responsive">
+                      <div class="input-material-group mb-4">
+                        <div contenteditable="true">
+                          Name: hello
+                          <br>
+                          Binding: hellowsdlBinding
+                          <br>
+                          Endpoint: https://127.0.0.1:443/mutillidae/webservices/soap/ws-hello-world.php
+                          <br>
+                          SoapAction: urn:hellowsdl#hello
+                          <br>
+                          Style: rpc
+                          <br>
+                          Input:
+                          <br>
+                           use: encoded
+                           <br>
+                           namespace: urn:hellowsdl
+                        </div>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>   
+        </section>
         <footer class="position-absolute bottom-0 bg-dash-dark-2 text-white text-center py-3 w-100 text-xs" id="footer">
           <div class="container-fluid text-center">
-            <!-- Please do not remove the backlink to us unless you support us at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-            <p class="mb-0 text-dash-gray">2021 &copy; Your company. Design by <a href="https://bootstrapious.com">Bootstrapious</a>.</p>
+            <p class="mb-0 text-dash-gray">Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0. Safari/537.36 PHP Version: 8.1.6</p>
           </div>
         </footer>
       </div>
@@ -124,7 +154,6 @@
     <script src="vendor/just-validate/js/just-validate.min.js"></script>
     <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="vendor/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="js/charts-home.js"></script>
     <!-- Main File-->
     <script src="js/front.js"></script>
     <script>
@@ -153,7 +182,6 @@
       
       
     </script>
-    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </body>
 </html>
